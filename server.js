@@ -1,7 +1,6 @@
 const express = require('express')
 const bodyparser = require('body-parser')
 const nodemailer = require('nodemailer')
-const dotenv = require('dotenv').config()
 const cors = require('cors')
 var ObjectID = require('mongodb').ObjectID;
 
