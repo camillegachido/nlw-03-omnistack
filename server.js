@@ -25,7 +25,7 @@ app.use(bodyparser.json())
 
 
 app.get('/', (req, res) => {
-    res.send('<h1>Hello World</h1>')
+    res.send('<h1>Hello Worl</h1>')
 })
 
 app.route('/data')
