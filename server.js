@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyparser = require('body-parser')
 const nodemailer = require('nodemailer')
-const cors = require('cors')
+// const cors = require('cors')
 var ObjectID = require('mongodb').ObjectID;
 
 const MongoClient = require('mongodb').MongoClient 
@@ -19,7 +19,7 @@ MongoClient.connect(uri, {useUnifiedTopology: true }, (err, client) => {
 
 const app = express()
 
-app.use(cors());
+// app.use(cors());
 app.use(bodyparser.json())
 
 
