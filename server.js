@@ -73,7 +73,7 @@ app.post('/send', (req, res) =>{
         }
     },)
 
-    if(nome == "" || email == "" || telefone == ""){
+    if(name == "" || email == "" || tel == ""){
         return res.status(500);
     }
 
