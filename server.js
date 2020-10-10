@@ -77,7 +77,7 @@ app.post('/send', (req, res) =>{
         return res.status(500);
     }
 
-    const html = ""
+    let html = ""
     if(message == ""){
         html = `<p><span style="font-weight: bold">Nome:</span> ${name}</p><p><span style="font-weight: bold">Email:</span> ${email}</p>
         <p><span style="font-weight: bold">Telefone:</span> ${tel}</p>`
