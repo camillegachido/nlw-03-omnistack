@@ -73,16 +73,29 @@ app.post('/send', (req, res) =>{
         }
     },)
 
+    if(nome == "" || email == "" || telefone == ""){
+        return res.status(500);
+    }
+
+    const html = ""
+    if(message == ""){
+        html = `<p><span style="font-weight: bold">Nome:</span> ${name}</p><p><span style="font-weight: bold">Email:</span> ${email}</p>
+        <p><span style="font-weight: bold">Telefone:</span> ${tel}</p>`
+    }
+    else{
+        html = `<p><span style="font-weight: bold">Nome:</span> ${name}</p><p><span style="font-weight: bold">Email:</span> ${email}</p>
+        <p><span style="font-weight: bold">Telefone:</span> ${tel}</p><p><span style="font-weight: bold">Mensagem:</span> ${message}</p>`
+    }
+
     transporter.sendMail({
         from: process.env.EMAIL,
         to: to,
         replyTo: email, //enviado como parametro,
         subject: 'Landing page Peugeot 208',
-        html: `<p><span style="font-weight: bold">Nome:</span> ${name}</p><p><span style="font-weight: bold">Email:</span> ${email}</p>
-                <p><span style="font-weight: bold">Telefone:</span> ${tel}</p><p><span style="font-weight: bold">Mensagem:</span> ${message}</p>`
+        html: html
     }).then(info=>{
-        res.status(200).send(info)
+        return res.status(200).send(info)
     }).catch(error=>{
-        res.status(500).send(error)
+        return res.status(500).send(error)
     })
 })
