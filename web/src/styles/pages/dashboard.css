@@ -1,0 +1,158 @@
+#page-dashboard{
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#page-dashboard .content-wrapper{
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-dashboard .content-wrapper main{
+    max-width: 240px;
+    height: 402px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-dashboard .content-wrapper main img{
+    width: 100%;
+}
+
+
+#page-dashboard .content-wrapper main .location{
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    position: inherit;
+}
+
+#page-dashboard .content-wrapper main .location strong{
+    font-weight: 800;
+}
+
+#page-dashboard .login{
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-dashboard .login main form  {
+    background-color: #fff;
+    width: 360px;
+    height: 430px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-dashboard .login main form  h1{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 34px;
+
+    color: #5C8599;
+}
+
+
+#page-dashboard .login main form  label{
+    font-size: 16px;
+    line-height: 22px;
+    color: #8FA7B3;
+}
+
+#page-dashboard .login main form  input{
+    background: #F5F8FA;
+
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    display: block;
+
+    width: 100%;
+    height: 64px;
+
+    padding: 21px 24px;
+
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #5C8599 !important;
+}
+
+
+#page-dashboard .login main form .configs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#page-dashboard .login main form .configs div{
+    display: flex;
+}
+
+#page-dashboard .login main form .configs input{
+    width: 24px;
+    height: 24px;
+    left: 1000px;
+
+    background: #F5F8FA;
+
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    margin-right: 16px;
+}
+
+#page-dashboard .login main form input:not(:placeholder-shown) {
+    background: #F5F8FA;
+}
+
+#page-dashboard .login main form .btn-login{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    background: #37C77F;
+    opacity: 0.5;
+    border-radius: 20px;
+
+    width: 100%;
+    height: 64px;
+    
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+#page-dashboard .login main form .btn-login.active{
+    opacity: 1;
+}
+
+
